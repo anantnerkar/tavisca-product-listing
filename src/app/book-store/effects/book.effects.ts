@@ -11,7 +11,7 @@ import {
     LoadDataSuccess, AddBookSuccess, AddBook,
     DeleteBooks, UpdateBook, UpdateBookSuccess, DeleteBookSuccess
 } from '../actions/book.actions';
-import { Book } from '../../models/book';
+import { Book } from '../../_models';
 import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 
 @Injectable()

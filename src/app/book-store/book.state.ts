@@ -1,4 +1,4 @@
-import { Book } from '../models/book';
+import { Book } from '../_models';
 export interface BookState {
     readonly books: Book[];
 }

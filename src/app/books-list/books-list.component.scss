@@ -41,3 +41,14 @@ table {
 .btn-margin {
     margin-left: 5px;
 }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+.float-right {
+    float: right;
+    margin-right: 5px;
+}  

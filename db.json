@@ -9,7 +9,7 @@
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "body": "some comment123",
       "postId": 1
     }
   ],
@@ -23,6 +23,55 @@
       "author": "Stuart little Jr.",
       "category": "Novel+Thrill",
       "id": 15
+    },
+    {
+      "book": "War and Peace",
+      "description": "This is book of war and peace",
+      "author": "Leo Tolstoy",
+      "category": "Novel",
+      "id": 1
+    },
+    {
+      "book": "The Adventures of Huckleberry Finn",
+      "description": "This is book of war and peace",
+      "author": "Mark Twain",
+      "category": "Novel",
+      "id": 2
+    },
+    {
+      "book": "An American Tragedy",
+      "description": "This is book of war and peace",
+      "author": "Theodore Dreiser",
+      "category": "Novel",
+      "id": 3
+    },
+    {
+      "book": "An idealist view of life",
+      "description": "This is book of war and peace",
+      "author": "Dr. S. Radhakrishnan",
+      "category": "Novel",
+      "id": 4
+    },
+    {
+      "book": "Anand Math",
+      "description": "This is book of war and peace",
+      "author": "Bankim Chandra Chatterjee",
+      "category": "Novel",
+      "id": 5
+    },
+    {
+      "book": "The Alchemist",
+      "description": "This is book of war and peace",
+      "author": "Paulo Coelho",
+      "category": "Novel",
+      "id": 6
+    },
+    {
+      "book": "No Spin: My Autobiography",
+      "description": "This is book of war and peace",
+      "author": "Shane Warne",
+      "category": "Novel",
+      "id": 7
     }
   ],
   "users": [

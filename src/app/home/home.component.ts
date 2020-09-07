@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { Book } from '../models/book';
+import { Book } from '../_models';
 import { Logout } from '../store/actions/user.actions';
 import { AppState, selectAuthState } from '../store/app.state';
 

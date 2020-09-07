@@ -1,6 +1,6 @@
 module.exports = {
     preset: "jest-preset-angular",
-    roots: "./src",
+    roots: ["./src"],
     testMatch: ["**/+(*.)+(spec).+(ts)"],
     setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
     transform: {
@@ -18,3 +18,6 @@ module.exports = {
     clearMocks: true,
     coverageDirectory: "coverage",
 };
+
+
+

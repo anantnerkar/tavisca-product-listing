@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { provideMockStore } from '@ngrx/store/testing';
 
 import { BooksListComponent } from './books-list.component';
 
@@ -8,7 +10,9 @@ describe('BooksListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BooksListComponent ]
+      declarations: [ BooksListComponent ],
+      imports: [RouterTestingModule],
+      providers: [provideMockStore()],
     })
     .compileComponents();
   }));

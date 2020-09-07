@@ -1,4 +1,4 @@
-import { Book } from '../../models/book';
+import { Book } from '../../_models';
 import {
 
   BookActions, ADD_BOOK, GET_BOOKS,

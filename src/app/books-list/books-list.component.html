@@ -1,3 +1,9 @@
+<div>
+    <div class="add" class="float-right">
+        <button aria-label="Add new book" style="margin: auto;" type="button" class="add-button" *ngIf="userAuthenticated" (click)="createBookForm()">Add New Book</button>
+    </div>
+</div>
+
 <div class="list">
     <table style="width:100%">
         <caption>
@@ -12,8 +18,8 @@
                 <th style="width: 20%">Author</th>
                 <th style="width: 20%">Short Description</th>
                 <th style="width: 10%">Category</th>
-                <th style="width: 10%">Published Year</th>
-                <th style="width: 10%">Price</th>
+                <!-- <th style="width: 10%">Published Year</th>
+                <th style="width: 10%">Price</th> -->
                 <th style="width: 20%" *ngIf="userAuthenticated">Action</th>
             </tr>
         </thead>
@@ -26,8 +32,8 @@
                 <td tabindex="0" style="width: 20%">{{book.author}}</td>
                 <td tabindex="0" style="width: 20%">{{book.description}}</td>
                 <td tabindex="0" style="width: 10%">{{book.category}}</td>
-                <td tabindex="0" style="width: 10%">{{book.publishedYear}}</td>
-                <td tabindex="0" style="width: 10%">{{book.price}}</td>
+                <!-- <td tabindex="0" style="width: 10%">{{book.publishedYear}}</td>
+                <td tabindex="0" style="width: 10%">{{book.price}}</td> -->
                 <td style="white-space: nowrap; width: 20%" class="actions-buttons" *ngIf="userAuthenticated">
                     <!-- <a routerLink="edit/{{book.id}}" class="btn btn-sm btn-primary mr-1">Edit</a> -->
                     <button tabindex="0" aria-label="Update Book" class="secondary-button update" 
@@ -50,9 +56,5 @@
 
         </tbody>
     </table>
-    <div>
-        <div class="add">
-            <button aria-label="Add new book" type="button" class="add-button" *ngIf="userAuthenticated" (click)="createBookForm()">Add New Book</button>
-        </div>
-    </div>
+    
 </div>

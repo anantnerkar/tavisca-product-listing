@@ -1,27 +1,102 @@
 {
-  "books": [
-    {
-      "book": "qaz",
-      "description": "qqq",
-      "author": "qqq",
-      "category": "qqq",
-      "id": 10
-    },
-    {
-      "book": "dsfdf",
-      "description": "gdfd",
-      "author": "aaaaa",
-      "category": "ssss",
-      "id": 15
-    }
-  ],
   
-  "users": [
-    {
-      "email": "yy",
-      "name": "yy",
-      "password": "yy",
-      "id": 11
-    }
-  ]
-}
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment123",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    },
+    "books": [
+      {
+        "book": "Pirated of Carribean",
+        "description": "Pirated of Carribean description",
+        "author": "Stuart little Jr.",
+        "category": "Novel+Thrill",
+        "id": 15
+      },
+      {
+        "book": "War and Peace",
+        "description": "This is book of war and peace",
+        "author": "Leo Tolstoy",
+        "category": "Novel",
+        "id": 1
+      },
+      {
+        "book": "The Adventures of Huckleberry Finn",
+        "description": "This is book of war and peace",
+        "author": "Mark Twain",
+        "category": "Novel",
+        "id": 2
+      },
+      {
+        "book": "An American Tragedy",
+        "description": "This is book of war and peace",
+        "author": "Theodore Dreiser",
+        "category": "Novel",
+        "id": 3
+      },
+      {
+        "book": "An idealist view of life",
+        "description": "This is book of war and peace",
+        "author": "Dr. S. Radhakrishnan",
+        "category": "Novel",
+        "id": 4
+      },
+      {
+        "book": "Anand Math",
+        "description": "This is book of war and peace",
+        "author": "Bankim Chandra Chatterjee",
+        "category": "Novel",
+        "id": 5
+      },
+      {
+        "book": "The Alchemist",
+        "description": "This is book of war and peace",
+        "author": "Paulo Coelho",
+        "category": "Novel",
+        "id": 6
+      },
+      {
+        "book": "No Spin: My Autobiography",
+        "description": "This is book of war and peace",
+        "author": "Shane Warne",
+        "category": "Novel",
+        "id": 7
+      }
+    ],
+    "users": [
+      {
+        "email": "yy",
+        "name": "yy",
+        "password": "yy",
+        "id": 11
+      },
+      {
+        "email": "vv",
+        "name": "vv",
+        "password": "vv",
+        "id": 12
+      },
+      {
+        "email": "yy",
+        "name": "yy",
+        "password": "yy",
+        "id": 13
+      }
+    ]
+  
+  }
+
+  
+  

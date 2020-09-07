@@ -1,16 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { provideMockStore } from '@ngrx/store/testing';
+import { Component } from '@angular/core';
 
 import { SignUpComponent } from './sign-up.component';
 
 describe('SignUpComponent', () => {
+
   let component: SignUpComponent;
   let fixture: ComponentFixture<SignUpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SignUpComponent ]
-    })
-    .compileComponents();
+      declarations: [SignUpComponent],
+      imports: [RouterTestingModule, FormsModule, ReactiveFormsModule],
+      providers: [provideMockStore()],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,4 +29,8 @@ describe('SignUpComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+});
+
+describe('Getter and setter', () => {
+  it('password should return a string', () => {});
 });

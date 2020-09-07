@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Book } from '../models/book';
+import { Book } from '../_models';
 import { Observable } from 'rxjs';
 import { BooksService } from '../services/books.service';
 import { Store } from '@ngrx/store';
