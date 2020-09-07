@@ -1,0 +1,78 @@
+<div class="create-form form-background">
+    <ng-container *ngIf="!displayUpdate; else updateBook">
+        <h2>Add new Book</h2>
+        <form [formGroup]="createBookForm">
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book name</label>
+                </div>
+                <div class="col50">
+                    <input type="text" aria-label="Enter book" formControlName="book">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book short description</label>
+                </div>
+                <div class="col50">
+                    <input type="text" aria-label="Enter Book short description" formControlName="description">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book author</label>
+                </div>
+                <div class="col50">
+                    <input aria-label="Enter book author" type="text" formControlName="author">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book category</label>
+                </div>
+                <div class="col50">
+                    <input aria-label="Enter book category" type="text" formControlName="category">
+                </div>
+            </div>
+        </form>
+        <button aria-label="Create the book" (click)="createOrUpdateBook()" class="secondary-button">Create</button>
+    </ng-container>
+    <ng-template #updateBook>
+        <h2>Update Book</h2>
+        <form [formGroup]="createBookForm">
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book name</label>
+                </div>
+                <div class="col50">
+                    <input aria-label="Enter book" type="text" formControlName="book">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book short description</label>
+                </div>
+                <div class="col50">
+                    <input aria-label="Enter book short description" type="text" formControlName="description">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book author</label>
+                </div>
+                <div class="col50">
+                    <input type="text" aria-label="Enter book author" formControlName="author">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col50">
+                    <label>Book category</label>
+                </div>
+                <div class="col50">
+                    <input type="text" aria-label="Enter book category" formControlName="category">
+                </div>
+            </div>
+        </form>
+        <button aria-label="Update book" (click)="createOrUpdateBook()" class="primary-button">update Book</button>
+    </ng-template>
+</div>

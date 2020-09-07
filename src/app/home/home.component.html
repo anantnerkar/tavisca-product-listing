@@ -1,0 +1,28 @@
+<div class="contain-all light-mode" [ngClass]="isDarkTheme ? 'dark-mode' : 'light-mode'">
+    <div>
+        <div class="fixed-header">
+                <nav>
+                    <!-- <a class="nav-item nav-link" style="margin-left: 15px; color: #fff;" routerLink="/users" routerLinkActive="active">Books</a> -->
+                    <button (click)="toggleTheme()" class="float-right">Toggle theme</button>
+                    
+                    <div *ngIf="isAuthenticated; then userLoggedIn; else showLoginAndSignUp" class="actions"></div>
+                    
+                    <ng-template #userLoggedIn>
+                        <a aria-label="Logout" class="nav-item nav-link" style="margin-right: 25px; float: right;" (click)="logout()">Logout</a>
+                        <span>
+                            Hi. You are logged in as <em>{{ user.email }}!</em>
+                        </span>
+                    </ng-template>
+
+                    <ng-template #showLoginAndSignUp>
+                        <a aria-label="Login" class="nav-item nav-link" style="margin-right: 25px; float: right;" (click)="gotoLogin()" >Login</a>
+                        <a aria-label="Sign up" class="nav-item nav-link" style="margin-right: 25px; float: right;" (click)="gotoSignUp()">Sign up</a>
+                    </ng-template>
+                </nav>
+        </div>
+    </div>
+
+    <div class="books-section">
+        <app-books-list [userAuthenticated]="isAuthenticated"></app-books-list>
+    </div>
+</div>

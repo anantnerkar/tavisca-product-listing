@@ -1,0 +1,27 @@
+{
+  "books": [
+    {
+      "book": "qaz",
+      "description": "qqq",
+      "author": "qqq",
+      "category": "qqq",
+      "id": 10
+    },
+    {
+      "book": "dsfdf",
+      "description": "gdfd",
+      "author": "aaaaa",
+      "category": "ssss",
+      "id": 15
+    }
+  ],
+  
+  "users": [
+    {
+      "email": "yy",
+      "name": "yy",
+      "password": "yy",
+      "id": 11
+    }
+  ]
+}

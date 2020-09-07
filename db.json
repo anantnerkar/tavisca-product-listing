@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "books": [
+    {
+      "book": "Pirated of Carribean",
+      "description": "Pirated of Carribean description",
+      "author": "Stuart little Jr.",
+      "category": "Novel+Thrill",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "email": "yy",
+      "name": "yy",
+      "password": "yy",
+      "id": 11
+    },
+    {
+      "email": "vv",
+      "name": "vv",
+      "password": "vv",
+      "id": 12
+    },
+    {
+      "email": "yy",
+      "name": "yy",
+      "password": "yy",
+      "id": 13
+    }
+  ]
+}

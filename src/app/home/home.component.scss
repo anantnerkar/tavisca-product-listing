@@ -1,0 +1,46 @@
+.header {
+    padding: 1rem;
+    overflow: hidden;
+    .heading-title {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .navigation {
+        display: contents;
+    }
+    .actions {
+        float: right;
+        padding: 1rem;
+        background-color: #9BC1BC;
+        border-radius: 0.5rem;
+        color: black;
+        text-decoration: none;
+    }
+    .login {
+        margin-left: 0.5rem;
+    }
+}
+
+.books-section {
+    margin-top: 8em;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: dodgerblue;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}   
+
+.float-right{
+    float: right;
+    margin-right: 10px;
+}
