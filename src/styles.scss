@@ -45,6 +45,9 @@
             font-weight: normal;
             font-size: 1rem;
         }
+        .header-theme {
+            background: $header-color;
+        }
     }
     &.dark-mode {
         @import "./themes/dark-theme/variables.scss";
@@ -79,6 +82,9 @@
             border: none;
             font-weight: normal;
             font-size: 1rem;
+        }
+        .header-theme {
+            background: $header-color;
         }
     }
 }

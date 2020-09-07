@@ -8,9 +8,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Book } from '../models/book';
 
 describe('BooksService', () => {
-  let service: BooksService;
-  let httpTestingController;
-
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],

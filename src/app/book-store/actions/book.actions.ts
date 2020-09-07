@@ -44,12 +44,5 @@ export class UpdateBookSuccess implements Action {
 export class DeleteBookSuccess implements Action {
     readonly type = DELETE_BOOK_SUCCESS;
   }
-export type BookActions =
-    AddBook |
-    GetBooks | 
-    DeleteBooks | 
-    UpdateBook | 
-    LoadDataSuccess | 
-    AddBookSuccess | 
-    UpdateBookSuccess | 
-    DeleteBookSuccess;
+export type BookActions = AddBook | GetBooks | DeleteBooks | UpdateBook | LoadDataSuccess | AddBookSuccess
+ | UpdateBookSuccess | DeleteBookSuccess;
