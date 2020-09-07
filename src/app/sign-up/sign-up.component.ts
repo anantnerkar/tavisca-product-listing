@@ -63,7 +63,8 @@ export class SignUpComponent implements OnInit {
       password: this.loginPassword,
     };
   }
-  public signUp(): void {
+  public signUp() {
+    console.log("Hi..", this.user);
     this.setUserData();
     this.store.dispatch(new SignUp(this.user));
   }
@@ -88,5 +89,10 @@ export class SignUpComponent implements OnInit {
   }
   get loginEmail(): string {
     return this.loginForm.get('email').value;
+  }
+
+  RegisterUser(){
+    this.setUserData();
+    this.store.dispatch(new SignUp(this.user));
   }
 }

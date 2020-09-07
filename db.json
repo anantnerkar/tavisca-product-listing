@@ -72,6 +72,13 @@
       "author": "Shane Warne",
       "category": "Novel",
       "id": 7
+    },
+    {
+      "book": "",
+      "description": "",
+      "author": "",
+      "category": "",
+      "id": 16
     }
   ],
   "users": [
@@ -92,6 +99,24 @@
       "name": "yy",
       "password": "yy",
       "id": 13
+    },
+    {
+      "email": "fff",
+      "password": "dfdfd",
+      "name": "ggg",
+      "id": 14
+    },
+    {
+      "email": "kumar",
+      "password": "akshay",
+      "name": "akshay",
+      "id": 15
+    },
+    {
+      "email": "sachin@gmail.com",
+      "password": "123456",
+      "name": "sachin",
+      "id": 16
     }
   ]
 }
