@@ -18,13 +18,6 @@
   },
   "books": [
     {
-      "book": "War and Peace",
-      "description": "This is book of war and peace",
-      "author": "Leo Tolstoy",
-      "category": "Novel",
-      "id": 1
-    },
-    {
       "book": "The Adventures of Huckleberry Finn",
       "description": "This is book of war and peace",
       "author": "Mark Twain",
@@ -109,6 +102,12 @@
       "password": "123456",
       "name": "rahul",
       "id": 17
+    },
+    {
+      "email": "MSD",
+      "password": "123456",
+      "name": "Dhoni",
+      "id": 18
     }
   ]
 }

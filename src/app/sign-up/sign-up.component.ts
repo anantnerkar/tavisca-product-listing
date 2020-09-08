@@ -64,7 +64,6 @@ export class SignUpComponent implements OnInit {
     };
   }
   public signUp() {
-    console.log("Hi..", this.user);
     this.setUserData();
     this.store.dispatch(new SignUp(this.user));
   }

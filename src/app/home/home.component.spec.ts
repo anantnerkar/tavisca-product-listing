@@ -19,9 +19,9 @@ fdescribe('HomeComponent', () => {
   };
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent],
-      // imports: [],
-      providers: [provideMockStore()],
+      declarations: [ HomeComponent ],
+      imports: [ RouterTestingModule],
+      providers: [ provideMockStore() ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
@@ -34,6 +34,8 @@ fdescribe('HomeComponent', () => {
   });
 
   it('should create', () => {
+    fixture = TestBed.createComponent(HomeComponent);
+    component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });
