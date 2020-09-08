@@ -23,7 +23,7 @@
 
                 <div class="form-group top-margin">
                     <label for="password">Password</label>
-                    <input type="text" placeholder="Enter Password" name="password" required autocomplete="off"
+                    <input type="password" placeholder="Enter Password" name="password" required autocomplete="off"
                         formControlName="password" class="form-control left-margin"
                         [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
                     <div *ngIf="submitted && f.password.errors" class="invalid-feedback">

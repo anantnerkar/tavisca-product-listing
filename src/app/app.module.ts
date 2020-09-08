@@ -15,6 +15,7 @@ import { reducers } from './store/app.state';
 import { BooksListComponent } from './books-list/books-list.component';
 import { CreateBookComponent } from './add-book/add-book.component';
 import { BookEffects } from './book-store/effects/book.effects';
+import { HeaderComponent } from './_components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BookEffects } from './book-store/effects/book.effects';
     SignUpComponent,
     HomeComponent,
     BooksListComponent,
-    CreateBookComponent
+    CreateBookComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

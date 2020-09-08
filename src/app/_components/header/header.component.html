@@ -1,0 +1,42 @@
+<!--<div class="fixed-header">
+    <div class="container">
+         <nav>
+            <a class="nav-item nav-link" style="margin-left: 15px; color: #fff;" routerLink="/users"
+                routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            <a class="nav-item nav-link" style="margin-left: 15px; color: #fff;" routerLink="/users" routerLinkActive="active">Books</a>
+            <a class="nav-item nav-link" style="margin-right: 25px; float: right;" routerLink="/account/login"
+                *ngIf="!isLoggedIn">Login {{isLoggedIn}}</a>
+            <a class="nav-item nav-link" style="margin-right: 25px; float: right;" (click)="logout()"
+                *ngIf="isLoggedIn">Logout</a>
+        </nav> -->
+
+
+        <div class="contain-all light-mode" [ngClass]="isDarkTheme ? 'dark-mode' : 'light-mode'">
+            <div class="fixed-header header-theme">
+                <nav>
+                    <span class="text-padding"> Books Collection App</span>
+        
+                    <button (click)="toggleTheme()" class="float-right">Toggle theme</button>
+        
+                    <div *ngIf="isAuthenticated; then userLoggedIn; else showLoginAndSignUp" class="actions"></div>
+        
+                    <ng-template #userLoggedIn>
+                        <a aria-label="Logout" class="nav-item nav-link"
+                            style="margin-right: 25px; float: right; cursor: pointer;" (click)="logout()">Logout</a>
+                        <span style="margin-left: 6em">
+                            Hi. Welcome <em>{{ user.email }}!</em>
+                        </span>
+                    </ng-template>
+        
+                    <ng-template #showLoginAndSignUp>
+                        <a aria-label="Login" class="nav-item nav-link"
+                            style="margin-right: 25px; float: right; cursor: pointer;" (click)="gotoLogin()">Login</a>
+                        <a aria-label="Sign up" class="nav-item nav-link"
+                            style="margin-right: 25px; float: right; cursor: pointer;" (click)="gotoSignUp()">Sign up</a>
+                    </ng-template>
+                </nav>
+            </div>
+        </div>
+    <!-- </div>
+</div> -->
+
