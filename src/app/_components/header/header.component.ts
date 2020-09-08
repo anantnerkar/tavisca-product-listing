@@ -49,6 +49,7 @@ export class HeaderComponent implements OnInit {
   public gotoSignUp(): void {
     this.router.navigateByUrl('sign-up');
   }
+  
   toggleTheme(): void {
     this.isDarkTheme = !this.isDarkTheme;
   }

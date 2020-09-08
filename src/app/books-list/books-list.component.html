@@ -1,7 +1,6 @@
-<div>
-    <div class="add" class="float-right">
-        <button aria-label="Add new book" style="margin: auto;" type="button" class="add-button" *ngIf="userAuthenticated" (click)="createBookForm()">Add New Book</button>
-    </div>
+<div class="add" class="float-right">
+    <button aria-label="Add new book" style="margin: auto;" type="button" class="add-button" *ngIf="userAuthenticated" 
+    (click)="createBookForm()">Add New Book</button>
 </div>
 
 <div class="list">
@@ -18,12 +17,9 @@
                 <th style="width: 20%">Author</th>
                 <th style="width: 20%">Short Description</th>
                 <th style="width: 10%">Category</th>
-                <!-- <th style="width: 10%">Published Year</th>
-                <th style="width: 10%">Price</th> -->
                 <th style="width: 20%" *ngIf="userAuthenticated">Action</th>
             </tr>
         </thead>
-        
         
         <tbody>
             <tr *ngFor="let book of bookList">
@@ -32,16 +28,13 @@
                 <td tabindex="0" style="width: 20%">{{book.author}}</td>
                 <td tabindex="0" style="width: 20%">{{book.description}}</td>
                 <td tabindex="0" style="width: 10%">{{book.category}}</td>
-                <!-- <td tabindex="0" style="width: 10%">{{book.publishedYear}}</td>
-                <td tabindex="0" style="width: 10%">{{book.price}}</td> -->
                 <td style="white-space: nowrap; width: 20%" class="actions-buttons" *ngIf="userAuthenticated">
                     <!-- <a routerLink="edit/{{book.id}}" class="btn btn-sm btn-primary mr-1">Edit</a> -->
                     <button tabindex="0" aria-label="Update Book" class="secondary-button update" 
-                    (click)="updateBook(book)" >Update</button>
+                    (click)="updateBook(book)">Update</button>
                     
-                    <button tabindex="0" aria-label="Delete Book" class="accent-button delete btn-margin" (click)="deleteBook(book.id)">
-                        Delete
-                    </button>
+                    <button tabindex="0" aria-label="Delete Book" class="accent-button delete btn-margin" 
+                    (click)="deleteBook(book.id)">Delete</button>
                 </td>
             </tr>
            
@@ -53,8 +46,6 @@
             <div *ngIf="createBook">
                 <app-add-book [existingBook]="bookToUpdate" (bookCreatedSuccessfully)="bookCreated($event)" (errorInBookCreation)="bookNotCreated($event)"></app-add-book>
             </div>
-
         </tbody>
     </table>
-    
 </div>
