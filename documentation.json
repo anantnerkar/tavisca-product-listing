@@ -3150,10 +3150,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Logout",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/sign-up/sign-up.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "productList",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/sign-up/sign-up.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -3180,6 +3196,22 @@
                 "file": "src/app/store/app.state.ts",
                 "type": "",
                 "defaultValue": "createFeatureSelector<AppState>('auth')"
+            },
+            {
+                "name": "SignIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/sign-up/sign-up.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Signup",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/sign-up/sign-up.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Small",
@@ -3212,6 +3244,14 @@
                 "file": "src/stories/Page.stories.ts",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/sign-up/sign-up.stories.ts",
+                "type": "Story<SignUpComponent>",
+                "defaultValue": "(args: SignUpComponent) => ({\r\n    component: SignUpComponent,\r\n    props: args,\r\n})"
             },
             {
                 "name": "UPDATE_BOOK_SUCCESS",
@@ -3578,6 +3618,48 @@
                     "file": "src/stories/Page.stories.ts",
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+                }
+            ],
+            "src/app/sign-up/sign-up.stories.ts": [
+                {
+                    "name": "Logout",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/sign-up/sign-up.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "productList",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/sign-up/sign-up.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SignIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/sign-up/sign-up.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Signup",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/sign-up/sign-up.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/sign-up/sign-up.stories.ts",
+                    "type": "Story<SignUpComponent>",
+                    "defaultValue": "(args: SignUpComponent) => ({\r\n    component: SignUpComponent,\r\n    props: args,\r\n})"
                 }
             ]
         },
@@ -4063,6 +4145,56 @@
                 "name": "SignUpComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/16",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/sign-up/sign-up.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Logout",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/sign-up/sign-up.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "productList",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/sign-up/sign-up.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SignIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/sign-up/sign-up.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Signup",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/sign-up/sign-up.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
